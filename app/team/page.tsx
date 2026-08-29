@@ -67,7 +67,7 @@ export default function TeamPage() {
                     <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#fff' }}>{f.tag}</span>
                   </div>
                   {f.badge && (
-                    <img src={f.badge} alt={`${f.name} badge`} style={{ position: 'absolute', top: -16, left: i % 2 === 0 ? -16 : 'auto', right: i % 2 === 1 ? -16 : 'auto', width: 110, height: 110, objectFit: 'contain', background: '#fff', border: '3px solid #DC2626' }} />
+                    <img src={f.badge} alt={`${f.name} badge`} style={{ position: 'absolute', top: 16, right: 16, width: 80, height: 80, objectFit: 'contain', background: '#fff', borderRadius: '50%', border: '3px solid #DC2626', boxShadow: '0 4px 14px rgba(0,0,0,0.35)' }} />
                   )}
                 </div>
                 <div style={{ order: i % 2 === 0 ? 1 : 0 }}>
