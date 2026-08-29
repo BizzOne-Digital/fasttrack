@@ -20,6 +20,7 @@ const founders = [
     bio: 'Claude brings mechanical engineering rigor and aesthetic sensibility to every product. As an IFBB Pro and Master Trainer & Wellness Coach, he understands what athletes need and engineers it to exceed expectations.',
     quote: '"Good equipment doesn\'t just work — it inspires confidence the moment you step under the bar."',
     img: '/claude-groulx.jpeg',
+    badge: '/claude-groulx-badge.jpeg',
     stats: [['12+', 'Years Engineering'], ['50+', 'Custom Designs'], ['100%', 'Build Quality']],
   },
 ];
@@ -65,6 +66,9 @@ export default function TeamPage() {
                   <div style={{ position: 'absolute', bottom: -16, right: i % 2 === 0 ? -16 : 'auto', left: i % 2 === 1 ? -16 : 'auto', background: '#DC2626', padding: '12px 20px' }}>
                     <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#fff' }}>{f.tag}</span>
                   </div>
+                  {f.badge && (
+                    <img src={f.badge} alt={`${f.name} badge`} style={{ position: 'absolute', top: -16, left: i % 2 === 0 ? -16 : 'auto', right: i % 2 === 1 ? -16 : 'auto', width: 110, height: 110, objectFit: 'contain', background: '#fff', border: '3px solid #DC2626' }} />
+                  )}
                 </div>
                 <div style={{ order: i % 2 === 0 ? 1 : 0 }}>
                   <div className="section-label"><span>{f.role}</span></div>
