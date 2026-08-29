@@ -6,20 +6,20 @@ import Link from 'next/link';
 const founders = [
   {
     name: 'Scott Thacker',
-    role: 'Co-Founder & CEO',
+    role: 'Inventor & Founder',
     tag: 'Business Strategy & Vision',
-    bio: 'With over 15 years in the fitness industry, Scott bridges the gap between athletic performance and innovative manufacturing. His background as a competitive strength athlete drives his relentless pursuit of quality.',
-    quote: '"Every piece of equipment we build should make the athlete feel like they can break their own record."',
-    img: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=700&q=85',
+    bio: 'Scott Thacker is the inventor of "Fast Track Rack," a cutting edge free-weight system that is very unique in that it allows the user a faster, safer, and more efficient workout compared to any current equipment available today. Through many years of strength training, powerlifting, and bodybuilding competitions, and personal training, Scott has been able to gain a clear and concise understanding of which kinds of equipment works best for the user. With Fast Track Rack, free-weight training is going to a whole new level!',
+    quote: '"Free-weight training is going to a whole new level."',
+    img: '/scott-thacker.jpeg',
     stats: [['15+', 'Years in Fitness'], ['300+', 'Client Builds'], ['5x', 'Competition Titles']],
   },
   {
     name: 'Claude Groulx',
-    role: 'Co-Founder & Head of Design',
+    role: 'IFBB Pro — Master Trainer & Wellness Coach',
     tag: 'Engineering & Product Design',
-    bio: 'Claude brings mechanical engineering rigor and aesthetic sensibility to every product. A former Division I strength coach, he understands what athletes need and engineers it to exceed expectations.',
+    bio: 'Claude brings mechanical engineering rigor and aesthetic sensibility to every product. As an IFBB Pro and Master Trainer & Wellness Coach, he understands what athletes need and engineers it to exceed expectations.',
     quote: '"Good equipment doesn\'t just work — it inspires confidence the moment you step under the bar."',
-    img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=85',
+    img: '/claude-groulx.jpeg',
     stats: [['12+', 'Years Engineering'], ['50+', 'Custom Designs'], ['100%', 'Build Quality']],
   },
 ];
