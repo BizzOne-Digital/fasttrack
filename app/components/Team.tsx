@@ -4,15 +4,15 @@ import Link from 'next/link';
 const team = [
   {
     name: 'Scott Thacker',
-    role: 'Co-Founder & CEO',
-    bio: 'Over 15 years in fitness equipment development. Scott drives the innovation and business strategy behind Fast Track Rack.',
-    img: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&q=80',
+    role: 'Inventor & Founder',
+    bio: 'Scott Thacker is the inventor of "Fast Track Rack," a cutting edge free-weight system built from years of strength training, powerlifting, and personal training experience.',
+    img: '/scott-thacker-temp.jpeg',
   },
   {
     name: 'Claude Groulx',
-    role: 'Co-Founder & Head of Design',
-    bio: 'Engineering precision meets design excellence. Claude\'s background in mechanical engineering shapes the quality of every rack we produce.',
-    img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80',
+    role: 'IFBB Pro — Master Trainer & Wellness Coach',
+    bio: 'Engineering precision meets design excellence. As an IFBB Pro and Master Trainer & Wellness Coach, Claude\'s background shapes the quality of every rack we produce.',
+    img: '/claude-groulx.jpeg',
   },
 ];
 
