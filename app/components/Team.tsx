@@ -35,9 +35,9 @@ export default function Team() {
             <div key={member.name} style={{ background: '#1a1a1a', overflow: 'hidden' }}
               className="card-lift">
               {/* Image */}
-              <div className="img-zoom" style={{ height: 300 }}>
+              <div className="img-zoom" style={{ height: 420 }}>
                 <img src={member.img} alt={member.name}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(60%)', transition: 'filter 0.5s, transform 0.5s' }}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', filter: 'grayscale(60%)', transition: 'filter 0.5s, transform 0.5s' }}
                   onMouseEnter={e => (e.currentTarget.style.filter = 'grayscale(0%)')}
                   onMouseLeave={e => (e.currentTarget.style.filter = 'grayscale(60%)')}
                 />

@@ -25,13 +25,6 @@ const founders = [
   },
 ];
 
-const staff = [
-  { name: 'Marcus Reid', role: 'Head Strength Coach', img: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?w=500&q=80' },
-  { name: 'Jordan Ellis', role: 'Conditioning Specialist', img: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=500&q=80' },
-  { name: 'Taylor Brooks', role: 'Nutrition & Recovery', img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=500&q=80' },
-  { name: 'Devon Clarke', role: 'Corporate Fitness Lead', img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80' },
-];
-
 const socialLinks = [
   <svg key="ig" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>,
   <svg key="fb" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>,
@@ -101,33 +94,6 @@ export default function TeamPage() {
         </div>
       </section>
 
-      {/* Staff */}
-      <section style={{ padding: '96px 0', background: '#f9fafb' }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ textAlign: 'center', marginBottom: 56 }}>
-            <div className="section-label" style={{ justifyContent: 'center' }}><span>The Crew</span></div>
-            <h2 className="font-display" style={{ fontSize: 'clamp(40px,6vw,68px)', color: '#111', lineHeight: 1 }}>
-              COACHING <span style={{ color: '#DC2626' }}>STAFF</span>
-            </h2>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 4 }} className="staff-grid">
-            {staff.map(s => (
-              <div key={s.name} style={{ background: '#fff', overflow: 'hidden' }} className="card-lift">
-                <div style={{ height: 280, overflow: 'hidden' }}>
-                  <img src={s.img} alt={s.name} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(50%)', transition: 'filter 0.4s, transform 0.4s', display: 'block' }}
-                    onMouseEnter={e => { e.currentTarget.style.filter = 'grayscale(0%)'; e.currentTarget.style.transform = 'scale(1.05)'; }}
-                    onMouseLeave={e => { e.currentTarget.style.filter = 'grayscale(50%)'; e.currentTarget.style.transform = 'scale(1)'; }} />
-                </div>
-                <div style={{ padding: '20px 24px', borderTop: '3px solid #DC2626' }}>
-                  <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase', color: '#DC2626', marginBottom: 4 }}>{s.role}</div>
-                  <h3 className="font-display" style={{ fontSize: 20, color: '#111' }}>{s.name}</h3>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section style={{ padding: '80px 0', background: '#111' }}>
         <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
           <h2 className="font-display" style={{ color: '#fff', fontSize: 'clamp(36px,5vw,60px)', marginBottom: 12 }}>
@@ -140,8 +106,6 @@ export default function TeamPage() {
 
       <style>{`
         @media(max-width:900px){.founder-row{grid-template-columns:1fr!important;gap:40px!important} .founder-row > div{order:unset!important}}
-        @media(max-width:768px){.staff-grid{grid-template-columns:1fr 1fr!important}}
-        @media(max-width:480px){.staff-grid{grid-template-columns:1fr!important}}
       `}</style>
     </>
   );
