@@ -6,7 +6,7 @@ const team = [
     name: 'Scott Thacker',
     role: 'Inventor & Founder',
     bio: 'Scott Thacker is the inventor of "Fast Track Rack," a cutting edge free-weight system built from years of strength training, powerlifting, and personal training experience.',
-    img: '/scott-thacker-temp.jpeg',
+    img: '/scott-thacker.jpeg',
   },
   {
     name: 'Claude Groulx',
