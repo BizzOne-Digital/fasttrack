@@ -17,11 +17,11 @@ const founders = [
     name: 'Claude Groulx',
     role: 'IFBB Pro — Master Trainer & Wellness Coach',
     tag: 'Engineering & Product Design',
-    bio: 'Claude brings mechanical engineering rigor and aesthetic sensibility to every product. As an IFBB Pro and Master Trainer & Wellness Coach, he understands what athletes need and engineers it to exceed expectations.',
+    bio: 'Claude Groulx is a Montreal-born IFBB professional bodybuilder with a 12-year competitive career spanning more than 40 shows, highlighted by his 2003 Masters Olympia title. Now a Master Trainer & Wellness Coach, he brings that same competitive-stage discipline and eye for form to the engineering and design of every Fast Track Rack product.',
     quote: '"Good equipment doesn\'t just work — it inspires confidence the moment you step under the bar."',
     img: '/claude-groulx.jpeg',
     badge: '/claude-groulx-badge.jpeg',
-    stats: [['12+', 'Years Engineering'], ['50+', 'Custom Designs'], ['100%', 'Build Quality']],
+    stats: [['40+', 'Pro Competitions'], ['2003', 'Masters Olympia Champ'], ['12', 'Years Competing']],
   },
 ];
 

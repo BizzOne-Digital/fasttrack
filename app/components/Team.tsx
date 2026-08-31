@@ -11,7 +11,7 @@ const team = [
   {
     name: 'Claude Groulx',
     role: 'IFBB Pro — Master Trainer & Wellness Coach',
-    bio: 'Engineering precision meets design excellence. As an IFBB Pro and Master Trainer & Wellness Coach, Claude\'s background shapes the quality of every rack we produce.',
+    bio: 'A Montreal-born IFBB Pro bodybuilder and 2003 Masters Olympia champion, Claude now brings that competitive discipline to coaching and to the design of every rack we produce.',
     img: '/claude-groulx.jpeg',
   },
 ];
