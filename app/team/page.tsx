@@ -21,6 +21,7 @@ const founders = [
     quote: '"Good equipment doesn\'t just work — it inspires confidence the moment you step under the bar."',
     img: '/claude-groulx.jpeg',
     badge: '/claude-groulx-badge.jpeg',
+    slug: 'claude-groulx',
     stats: [['40+', 'Pro Competitions'], ['2003', 'Masters Olympia Champ'], ['12', 'Years Competing']],
   },
 ];
@@ -65,8 +66,15 @@ export default function TeamPage() {
                 </div>
                 <div style={{ order: i % 2 === 0 ? 1 : 0 }}>
                   <div className="section-label"><span>{f.role}</span></div>
-                  <h2 className="font-display" style={{ fontSize: 'clamp(36px,5vw,60px)', color: '#111', lineHeight: 1, marginBottom: 20 }}>{f.name}</h2>
+                  <h2 className="font-display" style={{ fontSize: 'clamp(36px,5vw,60px)', color: '#111', lineHeight: 1, marginBottom: 20 }}>
+                    {f.slug ? <Link href={`/team/${f.slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>{f.name}</Link> : f.name}
+                  </h2>
                   <p style={{ fontSize: 16, color: '#4b5563', lineHeight: 1.8, marginBottom: 20 }}>{f.bio}</p>
+                  {f.slug && (
+                    <Link href={`/team/${f.slug}`} style={{ display: 'inline-block', fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#DC2626', textDecoration: 'none', marginBottom: 20 }}>
+                      Full Bio & Competition History →
+                    </Link>
+                  )}
                   <blockquote style={{ borderLeft: '4px solid #DC2626', paddingLeft: 20, marginBottom: 32 }}>
                     <p style={{ color: '#6b7280', fontStyle: 'italic', lineHeight: 1.7, fontSize: 15 }}>{f.quote}</p>
                   </blockquote>
