@@ -14,7 +14,7 @@ const services = [
   {
     title: 'Fitness Training Programs',
     tagline: 'Programs that produce real results.',
-    desc: 'World-class training courses led by certified coaches with backgrounds in professional athletics, physical therapy, and strength science.',
+    desc: 'Tailored training program to match your level and goals by highly experienced coaches with background in professional bodybuilding, strength training, and personal training.',
     features: ['Beginner to advanced levels', 'Strength & conditioning focus', 'Online + in-person options', 'Personalized programming'],
     img: '/claude-services.jpeg',
     logo: '/fast-track-wellness-logo.jpeg',
