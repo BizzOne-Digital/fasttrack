@@ -7,6 +7,9 @@ const cats = ['All', 'Equipment', 'Training', 'Facility', 'Athletes'];
 const items = [
   { src: '/fast-track-rack-product.jpeg', label: 'Fast Track Rack System', cat: 'Equipment' },
   { src: '/scott-thacker-temp.jpeg', label: 'Scott Thacker, Founder', cat: 'Athletes' },
+  { src: '/claude-wellness-poster.jpeg', label: 'Claude Groulx, Wellness Coach', cat: 'Athletes' },
+  { src: '/claude-headshot.jpeg', label: 'Claude Groulx', cat: 'Athletes' },
+  { src: '/claude-training.jpg', label: 'Claude Groulx in Training', cat: 'Training' },
   { src: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80', label: 'Training Floor Setup', cat: 'Facility' },
   { src: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80', label: 'Barbell & Weight Systems', cat: 'Equipment' },
   { src: 'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80', label: 'Custom Commercial Build', cat: 'Facility' },

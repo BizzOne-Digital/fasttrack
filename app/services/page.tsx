@@ -16,7 +16,8 @@ const services = [
     tagline: 'Programs that produce real results.',
     desc: 'World-class training courses led by certified coaches with backgrounds in professional athletics, physical therapy, and strength science.',
     features: ['Beginner to advanced levels', 'Strength & conditioning focus', 'Online + in-person options', 'Personalized programming'],
-    img: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80',
+    img: '/claude-services.jpeg',
+    logo: '/fast-track-wellness-logo.jpeg',
   },
   {
     title: 'Elite Athletic Coaching',
@@ -60,8 +61,11 @@ export default function ServicesPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 80 }}>
             {services.map((s, i) => (
               <div key={i} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'center', direction: i % 2 === 1 ? 'rtl' : 'ltr' }} className="service-row">
-                <div style={{ overflow: 'hidden', direction: 'ltr' }}>
+                <div style={{ overflow: 'hidden', direction: 'ltr', position: 'relative' }}>
                   <img src={s.img} alt={s.title} style={{ width: '100%', height: 400, objectFit: 'cover', display: 'block' }} />
+                  {s.logo && (
+                    <img src={s.logo} alt={`${s.title} logo`} style={{ position: 'absolute', bottom: 16, right: 16, width: 110, height: 'auto', borderRadius: 6, boxShadow: '0 4px 14px rgba(0,0,0,0.4)' }} />
+                  )}
                 </div>
                 <div style={{ direction: 'ltr' }}>
                   <div className="section-label"><span>{s.tagline}</span></div>
