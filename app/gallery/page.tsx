@@ -6,7 +6,7 @@ const cats = ['All', 'Equipment', 'Training', 'Facility', 'Athletes'];
 
 const items = [
   { src: '/fast-track-rack-product.jpeg', label: 'Fast Track Rack System', cat: 'Equipment' },
-  { src: '/scott-thacker-temp.jpeg', label: 'Scott Thacker, Founder', cat: 'Athletes' },
+  { src: '/scott-thacker1.jpeg', label: 'Scott Thacker, Founder', cat: 'Athletes' },
   { src: '/claude-wellness-poster.jpeg', label: 'Claude Groulx, Wellness Coach', cat: 'Athletes' },
   { src: '/claude-headshot.jpeg', label: 'Claude Groulx', cat: 'Athletes' },
   { src: '/claude-training.jpg', label: 'Claude Groulx in Training', cat: 'Training' },

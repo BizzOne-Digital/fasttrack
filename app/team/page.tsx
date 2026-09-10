@@ -10,7 +10,7 @@ const founders = [
     tag: 'Business Strategy & Vision',
     bio: 'Scott Thacker is the inventor of "Fast Track Rack," a cutting edge free-weight system that is very unique in that it allows the user a faster, safer, and more efficient workout compared to any current equipment available today. Through many years of strength training, powerlifting, and bodybuilding competitions, and personal training, Scott has been able to gain a clear and concise understanding of which kinds of equipment works best for the user. With Fast Track Rack, free-weight training is going to a whole new level!',
     quote: '"Free-weight training is going to a whole new level."',
-    img: '/scott-thacker.jpeg',
+    img: '/scott-thacker1.jpeg',
     stats: [['15+', 'Years in Fitness'], ['300+', 'Client Builds'], ['5x', 'Competition Titles']],
   },
   {
