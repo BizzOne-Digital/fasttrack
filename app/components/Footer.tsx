@@ -65,8 +65,8 @@ export default function Footer() {
             <h4 className="font-display" style={{ color: '#fff', fontSize: 16, marginBottom: 20, letterSpacing: '0.05em' }}>CONTACT</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               {[
-                { label: 'Email', val: 'thackerdalescott@gmail.com', href: 'mailto:thackerdalescott@gmail.com' },
-                { label: 'Phone', val: '+1 (618) 825-8282', href: 'tel:+16188258282' },
+                { label: 'Email', val: 'Claudegroulxifbbpro@gmail.com', href: 'mailto:Claudegroulxifbbpro@gmail.com' },
+                { label: 'Phone', val: '(954) 740-4387', href: 'tel:+19547404387' },
                 { label: 'Hours', val: 'Mon–Fri: 9AM–6PM CST', href: null },
               ].map(item => (
                 <div key={item.label}>

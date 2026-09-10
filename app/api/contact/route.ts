@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
     // const transporter = nodemailer.createTransporter({ ... });
     // await transporter.sendMail({
     //   from: process.env.SMTP_FROM,
-    //   to: 'thackerdalescott@gmail.com',
+    //   to: 'Claudegroulxifbbpro@gmail.com',
     //   subject: `FTR Contact: ${subject} from ${name}`,
     //   text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
     // });

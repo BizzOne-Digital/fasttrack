@@ -49,8 +49,8 @@ export default function Contact() {
             <div style={{ background: '#111', padding: '40px 36px', marginBottom: 16 }}>
               <h3 className="font-display" style={{ color: '#fff', fontSize: 24, marginBottom: 32 }}>REACH US</h3>
               {[
-                { label: 'Email', val: 'thackerdalescott@gmail.com', href: 'mailto:thackerdalescott@gmail.com' },
-                { label: 'Phone', val: '+1 (618) 825-8282', href: 'tel:+16188258282' },
+                { label: 'Email', val: 'Claudegroulxifbbpro@gmail.com', href: 'mailto:Claudegroulxifbbpro@gmail.com' },
+                { label: 'Phone', val: '(954) 740-4387', href: 'tel:+19547404387' },
                 { label: 'Hours', val: 'Mon–Fri: 9AM–6PM CST', href: null },
               ].map(item => (
                 <div key={item.label} style={{ marginBottom: 24 }}>
