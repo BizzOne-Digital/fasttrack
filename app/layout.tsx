@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import LeadCaptureButton from './components/LeadCaptureButton';
 
 export const metadata: Metadata = {
   title: 'Fast Track Rack, LLC | World-Class Fitness Equipment',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main style={{ paddingTop: 0 }}>{children}</main>
         <Footer />
+        <LeadCaptureButton />
       </body>
     </html>
   );
