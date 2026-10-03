@@ -9,16 +9,20 @@ import Team from './components/Team';
 import CTA from './components/CTA';
 import Contact from './components/Contact';
 import { getContent } from '../lib/content';
-import { homeTeamDefaults } from '../lib/pageDefaults';
+import { homeTeamDefaults, homeHeroDefaults, homeAboutDefaults } from '../lib/pageDefaults';
 
 export default async function HomePage() {
-  const { items: team } = await getContent('home-team', homeTeamDefaults);
+  const [{ items: team }, hero, about] = await Promise.all([
+    getContent('home-team', homeTeamDefaults),
+    getContent('home-hero', homeHeroDefaults),
+    getContent('home-about', homeAboutDefaults),
+  ]);
 
   return (
     <>
-      <Hero />
+      <Hero {...hero} />
       <Ticker />
-      <About />
+      <About {...about} />
       <WhyChooseUs />
       <Services />
       <Gallery />

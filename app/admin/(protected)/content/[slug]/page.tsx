@@ -104,7 +104,7 @@ export default function ContentEditorPage() {
   return (
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 32 }}>
-        <h1 className="font-display" style={{ fontSize: 28, color: '#111' }}>{config.title}</h1>
+        <h1 style={{ fontSize: 22, fontWeight: 800, color: '#111' }}>{config.title}</h1>
         <button onClick={save} disabled={saving} className="btn-red" style={{ border: 'none', cursor: 'pointer' }}>
           {saving ? 'Saving...' : saved ? 'Saved ✓' : 'Save Changes'}
         </button>

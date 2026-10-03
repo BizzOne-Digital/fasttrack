@@ -1,14 +1,23 @@
 'use client';
 import Link from 'next/link';
 
-export default function Hero() {
+interface HeroProps {
+  eyebrow: string;
+  titleLine1: string;
+  titleLine2: string;
+  titleLine3: string;
+  subtitle: string;
+  bgImg: string;
+}
+
+export default function Hero({ eyebrow, titleLine1, titleLine2, titleLine3, subtitle, bgImg }: HeroProps) {
   return (
     <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', background: '#0a0a0a', overflow: 'hidden' }}>
 
       {/* BG image */}
       <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
         <img
-          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1800&q=85"
+          src={bgImg}
           alt=""
           style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.35 }}
         />
@@ -27,22 +36,22 @@ export default function Hero() {
           <div className="anim-fade-up" style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 24 }}>
             <div style={{ width: 48, height: 2, background: '#DC2626' }} />
             <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.3em', textTransform: 'uppercase', color: '#DC2626' }}>
-              World Class Fitness Equipment
+              {eyebrow}
             </span>
           </div>
 
           {/* Headline */}
           <h1 className="font-display anim-fade-up anim-fade-up-d1"
             style={{ fontSize: 'clamp(64px, 10vw, 120px)', lineHeight: 0.92, color: '#fff', marginBottom: 28 }}>
-            FAST<br />
-            <span style={{ color: '#DC2626' }}>TRACK</span><br />
-            RACK
+            {titleLine1}<br />
+            <span style={{ color: '#DC2626' }}>{titleLine2}</span><br />
+            {titleLine3}
           </h1>
 
           {/* Sub */}
           <p className="anim-fade-up anim-fade-up-d2"
             style={{ fontSize: 18, color: '#d1d5db', lineHeight: 1.7, maxWidth: 520, marginBottom: 40, fontWeight: 300 }}>
-            We design, develop, and manufacture cutting-edge, world-class fitness equipment for athletes and organizations who demand the best.
+            {subtitle}
           </p>
 
           {/* CTAs */}

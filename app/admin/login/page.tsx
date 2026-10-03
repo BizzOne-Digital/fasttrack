@@ -36,7 +36,7 @@ export default function AdminLoginPage() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#111', padding: 24 }}>
       <form onSubmit={submit} style={{ background: '#fff', padding: 40, width: '100%', maxWidth: 400 }}>
-        <h1 className="font-display" style={{ fontSize: 28, color: '#111', marginBottom: 4 }}>Admin Login</h1>
+        <h1 style={{ fontSize: 24, fontWeight: 800, color: '#111', marginBottom: 4 }}>Admin Login</h1>
         <p style={{ color: '#6b7280', fontSize: 14, marginBottom: 28 }}>Fast Track Rack content management</p>
 
         <div style={{ marginBottom: 16 }}>

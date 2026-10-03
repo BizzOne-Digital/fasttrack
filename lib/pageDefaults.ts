@@ -165,10 +165,48 @@ export const claudeGroulxDefaults: {
   phone: '(954) 740-4387',
 };
 
+export const homeHeroDefaults: {
+  eyebrow: string;
+  titleLine1: string;
+  titleLine2: string;
+  titleLine3: string;
+  subtitle: string;
+  bgImg: string;
+} = {
+  eyebrow: 'World Class Fitness Equipment',
+  titleLine1: 'FAST',
+  titleLine2: 'TRACK',
+  titleLine3: 'RACK',
+  subtitle: 'We design, develop, and manufacture cutting-edge, world-class fitness equipment for athletes and organizations who demand the best.',
+  bgImg: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1800&q=85',
+};
+
+export const homeAboutDefaults: {
+  label: string;
+  titleLine1: string;
+  titleLine2: string;
+  para1: string;
+  para2: string;
+  img: string;
+  badgeNumber: string;
+  badgeLabel: string;
+} = {
+  label: 'Who We Are',
+  titleLine1: 'BUILT FOR',
+  titleLine2: 'CHAMPIONS',
+  para1: 'Fast Track Rack LLC was founded by Scott Thacker and Claude Groulx with a singular mission — to create fitness equipment that performs as hard as the athletes who use it.',
+  para2: 'Combining old-school craftsmanship with modern engineering, we produce racks and training systems trusted by commercial gyms, sports organizations, and elite training facilities across North America.',
+  img: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&q=85',
+  badgeNumber: '15+',
+  badgeLabel: 'Years of Excellence',
+};
+
 export const pageDefaultsBySlug: Record<string, Record<string, unknown>> = {
   team: teamDefaults,
   services: servicesDefaults,
   gallery: galleryDefaults,
+  'home-hero': homeHeroDefaults,
+  'home-about': homeAboutDefaults,
   'home-team': homeTeamDefaults,
   contact: contactDefaults,
   'claude-groulx': claudeGroulxDefaults,

@@ -15,7 +15,7 @@ export default function AdminNav({ email }: { email: string }) {
   return (
     <nav style={{ width: 260, background: '#111', color: '#fff', padding: '32px 24px', flexShrink: 0, display: 'flex', flexDirection: 'column' }}>
       <div style={{ marginBottom: 32 }}>
-        <div className="font-display" style={{ fontSize: 20, color: '#fff' }}>FAST TRACK</div>
+        <div style={{ fontSize: 17, fontWeight: 800, color: '#fff', letterSpacing: '0.02em' }}>FAST TRACK</div>
         <div style={{ fontSize: 11, color: '#6b7280', marginTop: 2 }}>Admin Panel</div>
       </div>
 

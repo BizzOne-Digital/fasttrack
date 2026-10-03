@@ -27,6 +27,34 @@ export interface PageConfig {
 
 export const pageConfigs: PageConfig[] = [
   {
+    slug: 'home-hero',
+    title: 'Homepage Hero Section',
+    folder: 'pages',
+    fields: [
+      { key: 'eyebrow', label: 'Eyebrow Text', type: 'text' },
+      { key: 'titleLine1', label: 'Headline Line 1', type: 'text' },
+      { key: 'titleLine2', label: 'Headline Line 2 (red)', type: 'text' },
+      { key: 'titleLine3', label: 'Headline Line 3', type: 'text' },
+      { key: 'subtitle', label: 'Subtitle', type: 'textarea' },
+      { key: 'bgImg', label: 'Background Photo', type: 'image' },
+    ],
+  },
+  {
+    slug: 'home-about',
+    title: 'Homepage About Section',
+    folder: 'pages',
+    fields: [
+      { key: 'label', label: 'Section Label', type: 'text' },
+      { key: 'titleLine1', label: 'Headline Line 1', type: 'text' },
+      { key: 'titleLine2', label: 'Headline Line 2 (red)', type: 'text' },
+      { key: 'para1', label: 'Paragraph 1', type: 'textarea' },
+      { key: 'para2', label: 'Paragraph 2', type: 'textarea' },
+      { key: 'img', label: 'Photo', type: 'image' },
+      { key: 'badgeNumber', label: 'Floating Badge Number', type: 'text' },
+      { key: 'badgeLabel', label: 'Floating Badge Label', type: 'text' },
+    ],
+  },
+  {
     slug: 'team',
     title: 'Team Page (/team)',
     folder: 'pages',
