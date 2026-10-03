@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       { protocol: 'https', hostname: 'images.unsplash.com' },
     ],
+    localPatterns: [
+      { pathname: '/api/uploads/**' },
+    ],
   },
 };
 

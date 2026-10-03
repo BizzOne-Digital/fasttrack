@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import LeadCaptureButton from './components/LeadCaptureButton';
+import SiteChrome from './components/SiteChrome';
 
 export const metadata: Metadata = {
   title: 'Fast Track Rack, LLC | World-Class Fitness Equipment',
@@ -13,10 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <main style={{ paddingTop: 0 }}>{children}</main>
-        <Footer />
-        <LeadCaptureButton />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );

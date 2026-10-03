@@ -1,22 +1,14 @@
 'use client';
 import Link from 'next/link';
 
-const team = [
-  {
-    name: 'Scott Thacker',
-    role: 'Inventor & Founder',
-    bio: 'Scott Thacker is the inventor of "Fast Track Rack," a cutting edge free-weight system built from years of strength training, powerlifting, and personal training experience.',
-    img: '/scott-thacker1.jpeg',
-  },
-  {
-    name: 'Claude Groulx',
-    role: 'IFBB Pro — Master Trainer & Wellness Coach',
-    bio: 'A Montreal-born IFBB Pro bodybuilder and 2003 Masters Olympia champion, Claude now brings that competitive discipline to coaching and to the design of every rack we produce.',
-    img: '/claude-groulx.jpeg',
-  },
-];
+interface TeamMember {
+  name: string;
+  role: string;
+  bio: string;
+  img: string;
+}
 
-export default function Team() {
+export default function Team({ team }: { team: TeamMember[] }) {
   return (
     <section style={{ padding: '96px 0', background: '#111' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 24px' }}>

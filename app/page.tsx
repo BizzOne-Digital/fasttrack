@@ -8,8 +8,12 @@ import Testimonials from './components/Testimonials';
 import Team from './components/Team';
 import CTA from './components/CTA';
 import Contact from './components/Contact';
+import { getContent } from '../lib/content';
+import { homeTeamDefaults } from '../lib/pageDefaults';
 
-export default function HomePage() {
+export default async function HomePage() {
+  const { items: team } = await getContent('home-team', homeTeamDefaults);
+
   return (
     <>
       <Hero />
@@ -19,7 +23,7 @@ export default function HomePage() {
       <Services />
       <Gallery />
       <Testimonials />
-      <Team />
+      <Team team={team} />
       <CTA />
       <Contact />
     </>
