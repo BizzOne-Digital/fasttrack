@@ -52,14 +52,7 @@ export interface ServiceItem {
 export const servicesDefaults: { items: ServiceItem[] } = {
   items: [
     {
-      title: 'Equipment Manufacturing',
-      tagline: 'Built from the ground up for champions.',
-      desc: 'Custom-designed racks, cages, and training systems manufactured from commercial-grade steel. From single orders to full facility builds, every piece is precision-crafted.',
-      features: ['Commercial-grade A36 steel', 'Powder coat finish options', 'Custom sizing available', 'Rated to 1,500+ lbs'],
-      img: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80',
-    },
-    {
-      title: 'Fitness Training Programs',
+      title: 'Training Program',
       tagline: 'Programs that produce real results.',
       desc: 'Tailored training program to match your level and goals by highly experienced coaches with background in professional bodybuilding, strength training, and personal training.',
       features: ['Beginner to advanced levels', 'Strength & conditioning focus', 'Online + in-person options', 'Personalized programming'],
@@ -67,32 +60,11 @@ export const servicesDefaults: { items: ServiceItem[] } = {
       logo: '/fast-track-wellness-logo.jpeg',
     },
     {
-      title: 'Elite Athletic Coaching',
-      tagline: 'One-on-one excellence.',
-      desc: 'Private coaching with our expert trainers. Optimize your form, programming, and mindset — whether preparing for competition or chasing personal bests.',
-      features: ['1-on-1 coaching sessions', 'Video form analysis', 'Competition prep protocols', 'Nutrition guidance'],
-      img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80',
-    },
-    {
-      title: 'Corporate Fitness Solutions',
-      tagline: 'Equip your entire organization.',
-      desc: 'Complete gym setup packages for businesses, hotels, and sports organizations — equipment, layout design, installation, and staff training.',
-      features: ['Full facility layout design', 'Bulk equipment supply', 'Installation included', 'Staff training programs'],
-      img: 'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80',
-    },
-    {
-      title: 'Custom Equipment Design',
-      tagline: 'Your vision. Our engineering.',
-      desc: 'Have a specific idea or unique space? Our design team engineers a custom solution tailored exactly to your requirements.',
-      features: ['CAD design & consultation', 'Prototype & testing', 'Any size or configuration', 'Branded finish options'],
-      img: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80',
-    },
-    {
-      title: 'Maintenance & Support',
-      tagline: 'We\'re with you for the long haul.',
-      desc: 'Scheduled maintenance plans, parts replacement, and a responsive service team. Your investment is protected by our commitment to excellence.',
-      features: ['Annual maintenance plans', 'Priority parts replacement', 'Remote & on-site support', 'Extended warranty options'],
-      img: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80',
+      title: 'Nutrition Program',
+      tagline: 'Fuel built around your goals.',
+      desc: 'A personalized nutrition plan designed around your body, goals, and lifestyle — from fat loss to performance to recovery.',
+      features: ['Custom macro & meal planning', 'Supplement guidance', 'Ongoing check-ins & adjustments', 'Works alongside your training plan'],
+      img: '/claude-training.jpg',
     },
   ],
 };
@@ -172,13 +144,19 @@ export const homeHeroDefaults: {
   titleLine3: string;
   subtitle: string;
   bgImg: string;
+  profileImg: string;
+  profileName: string;
+  profileRole: string;
 } = {
   eyebrow: 'World Class Fitness Equipment',
   titleLine1: 'FAST',
   titleLine2: 'TRACK',
   titleLine3: 'RACK',
-  subtitle: 'We design, develop, and manufacture cutting-edge, world-class fitness equipment for athletes and organizations who demand the best.',
+  subtitle: 'Personalized training and nutrition programs built around your goals — guided by IFBB Pro bodybuilder and Master Trainer Claude Groulx.',
   bgImg: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1800&q=85',
+  profileImg: '/claude-groulx.jpeg',
+  profileName: 'Claude Groulx',
+  profileRole: 'IFBB Pro — Master Trainer & Wellness Coach',
 };
 
 export const homeAboutDefaults: {

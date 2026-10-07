@@ -1,13 +1,17 @@
 'use client';
+import { useState } from 'react';
 import PageHero from '../components/PageHero';
 import Link from 'next/link';
+import BuyNowModal from '../components/BuyNowModal';
 import type { ServiceItem } from '../../lib/pageDefaults';
 
 export default function ServicesPageClient({ services }: { services: ServiceItem[] }) {
+  const [buyingProgram, setBuyingProgram] = useState<string | null>(null);
+
   return (
     <>
       <PageHero title="OUR" highlight="SERVICES"
-        subtitle="We provide world-class fitness training and equipment. Contact us for pricing tailored to your needs."
+        subtitle="Personalized training and nutrition programs built around your goals."
         breadcrumb="Services" bg="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1600&q=80" />
 
       <section style={{ padding: '96px 0', background: '#fff' }}>
@@ -33,7 +37,7 @@ export default function ServicesPageClient({ services }: { services: ServiceItem
                       </li>
                     ))}
                   </ul>
-                  <Link href="/contact" className="btn-red">Get a Quote</Link>
+                  <button onClick={() => setBuyingProgram(s.title)} className="btn-red" style={{ border: 'none', cursor: 'pointer' }}>Buy Now</button>
                 </div>
               </div>
             ))}
@@ -52,6 +56,8 @@ export default function ServicesPageClient({ services }: { services: ServiceItem
       </section>
 
       <style>{`@media(max-width:900px){.service-row{grid-template-columns:1fr!important;direction:ltr!important;gap:32px!important}}`}</style>
+
+      {buyingProgram && <BuyNowModal program={buyingProgram} onClose={() => setBuyingProgram(null)} />}
     </>
   );
 }

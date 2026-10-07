@@ -37,6 +37,9 @@ export const pageConfigs: PageConfig[] = [
       { key: 'titleLine3', label: 'Headline Line 3', type: 'text' },
       { key: 'subtitle', label: 'Subtitle', type: 'textarea' },
       { key: 'bgImg', label: 'Background Photo', type: 'image' },
+      { key: 'profileImg', label: 'Featured Profile Photo', type: 'image' },
+      { key: 'profileName', label: 'Featured Profile Name', type: 'text' },
+      { key: 'profileRole', label: 'Featured Profile Role', type: 'text' },
     ],
   },
   {

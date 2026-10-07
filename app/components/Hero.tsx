@@ -8,9 +8,12 @@ interface HeroProps {
   titleLine3: string;
   subtitle: string;
   bgImg: string;
+  profileImg: string;
+  profileName: string;
+  profileRole: string;
 }
 
-export default function Hero({ eyebrow, titleLine1, titleLine2, titleLine3, subtitle, bgImg }: HeroProps) {
+export default function Hero({ eyebrow, titleLine1, titleLine2, titleLine3, subtitle, bgImg, profileImg, profileName, profileRole }: HeroProps) {
   return (
     <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', background: '#0a0a0a', overflow: 'hidden' }}>
 
@@ -29,7 +32,7 @@ export default function Hero({ eyebrow, titleLine1, titleLine2, titleLine3, subt
       <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 5, background: '#DC2626', zIndex: 2 }} />
 
       {/* Content */}
-      <div style={{ position: 'relative', zIndex: 3, maxWidth: 1280, margin: '0 auto', padding: '120px 24px 80px', width: '100%' }}>
+      <div style={{ position: 'relative', zIndex: 3, maxWidth: 1280, margin: '0 auto', padding: '120px 24px 80px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 48 }} className="hero-row">
         <div style={{ maxWidth: 680 }}>
 
           {/* eyebrow */}
@@ -77,6 +80,17 @@ export default function Hero({ eyebrow, titleLine1, titleLine2, titleLine3, subt
             ))}
           </div>
         </div>
+
+        {/* Featured profile */}
+        <div className="hero-profile anim-fade-up anim-fade-up-d2" style={{ flexShrink: 0, width: 280 }}>
+          <div style={{ overflow: 'hidden', height: 340, border: '2px solid rgba(255,255,255,0.15)' }}>
+            <img src={profileImg} alt={profileName} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+          </div>
+          <div style={{ background: '#DC2626', padding: '14px 18px' }}>
+            <div style={{ color: '#fff', fontWeight: 800, fontSize: 15, lineHeight: 1.2 }}>{profileName}</div>
+            <div style={{ color: 'rgba(255,255,255,0.85)', fontSize: 11, letterSpacing: '0.05em', textTransform: 'uppercase', marginTop: 4 }}>{profileRole}</div>
+          </div>
+        </div>
       </div>
 
       {/* Scroll hint */}
@@ -84,7 +98,10 @@ export default function Hero({ eyebrow, titleLine1, titleLine2, titleLine3, subt
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><polyline points="6 9 12 15 18 9"/></svg>
       </div>
 
-      <style>{`@keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }`}</style>
+      <style>{`
+        @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+        @media (max-width: 960px) { .hero-profile { display: none !important; } .hero-row { justify-content: flex-start !important; } }
+      `}</style>
     </section>
   );
 }
